@@ -1,0 +1,7 @@
+DirectoryIndex index.php
+
+# Keep the project root accessible. Sensitive PHP/config files are protected
+# inside their own folders so API endpoints are not accidentally blocked.
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
